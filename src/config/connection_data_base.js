@@ -2,7 +2,7 @@ import mongoose from "mongoose"
 
 async function connection_data_base() {
 
-    mongoose.connect("mongodb://localhost:27017/Registros")
+    mongoose.connect(process.env.CONNECTION_DATABASE)
     return mongoose.connection
     
 }

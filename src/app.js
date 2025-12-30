@@ -3,6 +3,8 @@ import connection_data_base from "./config/connection_data_base.js"
 import chalk from "chalk"
 import route from "./routes/index.js"
 import cors from "cors"
+import dotenv from "dotenv"
+dotenv.config()
 
 const app = express()
 
